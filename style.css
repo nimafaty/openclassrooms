@@ -1,0 +1,77 @@
+h2 {
+    color: #00f;
+}
+
+.introduction {
+    text-align: center;
+}
+
+body {
+    background-image: url("fonds_gris_detourercom_040_roys.jpg");
+    margin: 0;
+}
+
+img {
+    float: right;
+    border: 5px black solid;
+    box-shadow: 6px 6px 2px black;
+    height: 80px;
+
+}
+#conteneur {
+    clear: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sidebar {
+    background-image: url("lisere.jpg");
+    background-size: cover;
+    height: 350px;
+    width: 100px;
+    float: left;
+    animation: gray 5s infinite;
+}
+
+.element {
+    flex: 1;
+    margin: 0 3%;
+}
+
+@keyframes gray {
+    0% {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+    50% {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    #conteneur {
+        clear: right;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
